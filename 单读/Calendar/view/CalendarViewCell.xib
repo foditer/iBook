@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="PMingLiU.ttf">
+            <string>PMingLiU</string>
+            <string>PMingLiU</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CalendarViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="428"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="428"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-oa-tjI">
+                        <rect key="frame" x="20" y="61" width="275" height="347"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="2月,13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9G-O4-e9B">
+                        <rect key="frame" x="10" y="8" width="38" height="14"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="PMingLiU" family="PMingLiU" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaV-hW-a2l">
+                        <rect key="frame" x="10" y="25" width="27" height="26"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="PMingLiU" family="PMingLiU" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goin_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="D8q-1J-yKM">
+                        <rect key="frame" x="255" y="20" width="50" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="URX-bH-cGi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="t8v-oa-tjI" secondAttribute="trailing" constant="20" id="Bed-PY-63d"/>
+                <constraint firstAttribute="bottom" secondItem="t8v-oa-tjI" secondAttribute="bottom" constant="20" id="EoD-6A-B0c"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="top" secondItem="D8q-1J-yKM" secondAttribute="bottom" constant="20" id="Nal-vW-61r"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="SWX-FR-A7V"/>
+                <constraint firstItem="JaV-hW-a2l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Tdy-Ga-db0"/>
+                <constraint firstItem="I9G-O4-e9B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Zei-A1-b7K"/>
+                <constraint firstAttribute="trailing" secondItem="D8q-1J-yKM" secondAttribute="trailing" constant="10" id="cdb-m3-uPA"/>
+                <constraint firstItem="JaV-hW-a2l" firstAttribute="top" secondItem="I9G-O4-e9B" secondAttribute="bottom" constant="3" id="dqW-kF-swh"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.9" id="dzs-Yn-QCs"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fRe-UB-p00"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="fWo-ou-ySN"/>
+                <constraint firstItem="I9G-O4-e9B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jur-Oh-ABB"/>
+                <constraint firstItem="D8q-1J-yKM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="nOk-3X-yBn"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="top" secondItem="JaV-hW-a2l" secondAttribute="bottom" constant="10" id="qGX-Oe-ftN"/>
+                <constraint firstItem="t8v-oa-tjI" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="upb-aj-VxW"/>
+            </constraints>
+            <size key="customSize" width="315" height="428"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="SWX-FR-A7V"/>
+                    <exclude reference="dzs-Yn-QCs"/>
+                    <exclude reference="fRe-UB-p00"/>
+                    <exclude reference="upb-aj-VxW"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="picView" destination="t8v-oa-tjI" id="rjI-dW-bTP"/>
+                <outlet property="timeLabel" destination="I9G-O4-e9B" id="kas-JR-FoX"/>
+            </connections>
+            <point key="canvasLocation" x="289.5" y="219"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="goin_gray.png" width="12" height="21"/>
+    </resources>
+</document>
